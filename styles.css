@@ -1,0 +1,37 @@
+body {
+    background-color: #ffddd2;
+    font-family: "Ancizar Serif", serif;
+    padding: 10%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+}
+
+img {
+    width: 20%;
+}
+
+#contacto,
+h3,
+#habilidades, #presentation {
+    text-align: center;
+}
+
+#contacto, #habilidades{
+    width: 48%;
+}
+
+th,
+td {
+    border: 1px solid  black;
+}
+
+table {
+    width: 100%;
+    border: 3px solid;
+    background-color: #e29578;
+}
