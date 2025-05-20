@@ -4,90 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida Angélica</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <title>CV Angelica Cuervo</title>
 </head>
 
 <body>
+    <!-- seccion presentacion -->
     <section id="presentation">
-        <h1>Hoja de vida</h1>
-        <h2>Angélica María Cuervo Marín</h2>
-        <img src="/home/coders/Documentos/Angelica/Hoja de vida/Angelica.jpg">
-    </section>
-    
-    <section id="container">
-        <section id="contacto">
-            <h3>Contacto: </h3>
-            <ol><b>Telefono:</b> 33333</ol>
-            <ol><b>Correo:</b> angelica@correo.com</ol>
-            <ol><b>Linkedin:</b> linkedin</ol>
-        </section>
-        <section id="habilidades">
-            <h3>Habilidades:</h3>
-            <p>Python</p>
-            <p>HTML</p>
-            <p>CSS</p>
-        </section>
+        <h1 id="name">Angélica Cuervo</h1>
+        <h2>Hoja de vida</h2>
     </section>
 
-    <section>
-        <h3>Experiencia</h3>
-        <!-- ponerle borde -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Empresa</th>
-                    <th>Riwi</th>
-                    <th>Eafit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Contacto</th>
-                    <th>666</th>
-                    <th>777</th>
-                </tr>
-                <tr>
-                    <th>Cargo</th>
-                    <th>Frontend</th>
-                    <th>Backend</th>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Contacto</th>
-                    <th>Parentezco</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Mi mamá</th>
-                    <th>888</th>
-                    <th>Madre</th>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <th>Tia</th>
-                    <th>999</th>
-                    <th>Tía</th>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
+    <div class="flex-container">
+        <div class="flex-item">
+            <!-- seccion contacto -->
+            <section id="contact">
+                <h3>Contacto: </h3>
+                <p><b>Telefono:</b> 33333</p>
+                <p><b>Correo:</b> angelica@correo.com</p>
+                <p><b>Linkedin:</b> linkedin</p>
+                <p><b>Github:</b> github</p>
+            </section>
+        </div>
 
-    </section>
+        <div class="flex-item">
+            <img src="Angelica.jpg">
+        </div>
+
+        <div class="flex-item">
+            <!-- seccion habilidades programacion -->
+            <section id="skills">
+                <h3>Habilidades:</h3>
+                <p>HTML ● ● ○<br>
+                    CSS ● ● ○<br>
+                    Python ● ● ○<br>
+                    JavaScript ● ○ ○</p>
+            </section>
+        </div>
+
+        <div class="flex-item">
+            <!-- seccion Experiencia -->
+            <section id="experience">
+                <h3>Experiencia</h3>
+                <div id="experience1">
+                    <p><b>Empresa:</b> Who </p>
+                    <p><b>Cargo:</b> Desarrolladora backend</p>
+                    <p><b>Años:</b> 1 año</p>
+                </div>
+                <div id="experience2">
+                    <p><b>Empresa:</b> What </p>
+                    <p><b>Cargo:</b> Desarrolladora frontend</p>
+                    <p><b>Años:</b> 2 años</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="flex-item">
+            <!-- descripcion -->
+            <section id="description">
+                <h3>Perfil profesional</h3>
+                <p>Soy una desarrolladora web con habilidades en creación de
+                    páginas web, manejo de bases de datos, gestión de proyectos y creación de chatbots.
+                    Cuento con dominio en metodologías ágiles SCRUM y lenguajes de programación como JavaScript, Java,
+                    Python, node.js y el framework Angular.
+                </p>
+            </section>
+        </div>
+
+        <div class="flex-item">
+            <!-- seccion referencias -->
+            <section id="references">
+                <h3>Referencias personales</h3>
+                <div id="reference1">
+                    <p><b>Nombre:</b> Mamá </p>
+                    <p><b>Parentezco:</b> Madre </p>
+                    <p><b>Contacto:</b> 3333 </p>
+                </div>
+                <div id="reference2">
+                    <p><b>Nombre:</b> Mamá </p>
+                    <p><b>Parentezco:</b> Madre </p>
+                    <p><b>Contacto:</b> 3333 </p>
+                </div>
+            </section>
+        </div>
+    </div>
 
 </body>
 
